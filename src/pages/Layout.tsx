@@ -68,7 +68,7 @@ const Layout = () => {
         </div>
       </Profile>
       <Nav>
-        <NavLink to="/">포스트</NavLink>
+        <NavLink to="/">포스트1</NavLink>
         <NavLink to="/resume">소개</NavLink>
       </Nav>
       <Outlet />
