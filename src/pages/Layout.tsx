@@ -1,6 +1,6 @@
 import { NavLink, Outlet } from 'react-router-dom';
 import styled from '@emotion/styled';
-
+import img1 from './다운로드.jpg';
 const Nav = styled.div`
   display: flex;
   align-items: center;
@@ -60,14 +60,17 @@ const Layout = () => {
       <Profile>
         {/*todo (1) 프로필 꾸미기*/}
         <div>
-          <ProfilePicture src="" alt="프로필 사진" />
+          <ProfilePicture src={img1} alt="프로필 사진" />
         </div>
         <div>
-          <Name>이름</Name>
-          <Description>설명</Description>
+          <Name>이택</Name>
+          <Description>이택의 블로그</Description>
         </div>
       </Profile>
-      <Nav>{/*todo (2) 메뉴 작성*/}</Nav>
+      <Nav>
+        <NavLink to="/">포스트</NavLink>
+        <NavLink to="/resume">소개</NavLink>
+      </Nav>
       <Outlet />
     </div>
   );
